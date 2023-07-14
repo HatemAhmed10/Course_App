@@ -1,0 +1,55 @@
+// import 'package:cached_network_image/cached_network_image.dart';
+// import 'package:course_app/models/3Learn/3LearnModel.dart';
+// import 'package:flutter/material.dart';
+// import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+// import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+
+// class Learn_Details extends StatelessWidget {
+//   Learn_Details({super.key, required this.learnModel});
+//   final LearnModel learnModel;
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text(learnModel.LearnName.toString()),
+//         ),
+//         body: Center(
+//           child: Column(
+//             children: [
+//               Container(
+//                 height: 200,
+//                 child: SfPdfViewer.network(
+//                     "https://cdn.syncfusion.com/content/PDFViewer/flutter-succinctly.pdf"),
+//               ),
+//               Container(
+//                 height: 200,
+//                 child: ClipRRect(
+//                   borderRadius: BorderRadius.circular(12),
+//                   child: CachedNetworkImage(
+//                       fit: BoxFit.fill,
+//                       imageUrl:
+//                           "https://firebasestorage.googleapis.com/v0/b/courses-94387.appspot.com/o/files%2FUserFoto%2Ffile%2FIMG-20230713-WA0043.jpg?alt=media&token=69af6946-6578-4132-a266-dd0d50108f29"),
+//                 ),
+//               ),
+//               SizedBox(
+//                 height: 60,
+//               ),
+//               YoutubePlayer(
+//                 controller: YoutubePlayerController(
+//                   initialVideoId: 'YPOiNF0riyA',
+//                   flags: YoutubePlayerFlags(
+//                     autoPlay: true,
+//                     mute: false,
+//                   ),
+//                 ),
+//                 showVideoProgressIndicator: true,
+//               ),
+//             ],
+//           ),
+//         ));
+//   }
+// }
+
+
+// // https://youtu.be/YPOiNF0riyA
